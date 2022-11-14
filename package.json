@@ -1,0 +1,23 @@
+{
+  "name": "professional-readme",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HLovelady/Professional-README.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HLovelady/Professional-README/issues"
+  },
+  "homepage": "https://github.com/HLovelady/Professional-README#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
