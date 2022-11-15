@@ -32,8 +32,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Usage Information
 
-![Screencast-readme](https://user-images.githubusercontent.com/97558337/202047150-6fb2ffbf-7a46-4b93-9744-2db7784a4337.gif)
-
+![Screencast-readme2](https://user-images.githubusercontent.com/97558337/202047338-cbfb4f85-b17c-4f27-991f-b978b3784416.gif)
 
 A command-line application generates a professional README.md from a user's input using the inquirer package.
 
