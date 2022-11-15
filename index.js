@@ -67,3 +67,13 @@ const questions = [
     }
 
 ];
+
+//Write README function
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Information successfully transferred to the README!');
+    });
+};
