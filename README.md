@@ -45,5 +45,5 @@ No tests were built but the README was tested through the integrated terminal.
 
 
 ## Questions
-If you have any question, Email me at: Hfayelovelady@gmail.com 
+If you have any question, Email me at: Hfayelovelady@gmail.com \n
 Find me on GitHub: [HLovelady](https://github.com/HLovelady)
