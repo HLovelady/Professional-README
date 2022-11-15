@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generatorMarkdown.js');
+const generatedREADME = require('./generatedREADME.js');
 
-// TODO: Create an array of questions for user input
-//const questions = [];
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -24,12 +22,12 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide instructions and examples for use. Include screenshots as needed.',
+        message: 'Provide instructions and examples for use. (Include screenshots as needed.)',
         name: 'usage',
     },
     {
         type: 'list',
-        message: 'Choose your license for your project.',
+        message: 'Select the license used for your project.',
         name: 'license',
         choices: [
             { value: 'Apache' },   //Apache 2.0 License
@@ -50,14 +48,9 @@ const questions = [
         message: 'Provide tests for project, and explain how to test (Optional).',
         name: 'test',
     },
-    // {
-    //     type: 'input',
-    //     message: 'Do you have any question?(Optional).',
-    //     name: 'questions',
-    // },
     {
         type: "input",
-        message: "Enter your GitHub username: ",
+        message: "Enter you GitHub username: ",
         name: "username",
     },
     {
@@ -70,7 +63,7 @@ const questions = [
 
 //Write README function
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), function (err) {
+    fs.writeFile(fileName, generatedREADME(data), function (err) {
         if (err) {
             return console.log(err);
         }
