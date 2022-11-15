@@ -77,3 +77,14 @@ function writeToFile(fileName, data) {
         console.log('Information successfully transferred to the README!');
     });
 };
+
+// //Initialize app function
+function init() {
+    inquirer.prompt(questions).then(function (response) {
+        console.log(response);
+        writeToFile(`${response.title}.md`, response);
+    });
+};
+
+// Function call to initialize app
+init();
